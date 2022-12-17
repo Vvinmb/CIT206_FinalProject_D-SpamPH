@@ -1,0 +1,287 @@
+import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/flutter_flow_util.dart';
+import '../flutter_flow/flutter_flow_widgets.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class LoginPageWidget extends StatefulWidget {
+  const LoginPageWidget({Key? key}) : super(key: key);
+
+  @override
+  _LoginPageWidgetState createState() => _LoginPageWidgetState();
+}
+
+class _LoginPageWidgetState extends State<LoginPageWidget> {
+  TextEditingController? textController1;
+  TextEditingController? textController2;
+  final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  @override
+  void initState() {
+    super.initState();
+    // On page load action.
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
+      context.pushNamed('LoginPage');
+    });
+
+    textController1 = TextEditingController();
+    textController2 = TextEditingController();
+  }
+
+  @override
+  void dispose() {
+    textController1?.dispose();
+    textController2?.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      key: scaffoldKey,
+      backgroundColor: Colors.white,
+      body: GestureDetector(
+        onTap: () => FocusScope.of(context).unfocus(),
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            Column(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Align(
+                  alignment: AlignmentDirectional(0, 0),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        'assets/images/cropped_pngkit_black-bar-png_205710.png',
+                        width: 953.8,
+                        height: 43.6,
+                        fit: BoxFit.scaleDown,
+                      ),
+                      Divider(
+                        height: 40,
+                        thickness: 1,
+                        color: Colors.transparent,
+                      ),
+                      Image.asset(
+                        'assets/images/PROPORTION_SPAM_Detect_PH.png',
+                        width: 250,
+                        height: 158.8,
+                        fit: BoxFit.scaleDown,
+                      ),
+                      Text(
+                        'D-SpamPH',
+                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                              fontFamily: 'Oswald',
+                              fontSize: 23,
+                              fontWeight: FontWeight.bold,
+                            ),
+                      ),
+                      Divider(
+                        height: 40,
+                        thickness: 1,
+                        color: Colors.transparent,
+                      ),
+                      Align(
+                        alignment: AlignmentDirectional(-0.85, 0),
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
+                          child: Text(
+                            'Number',
+                            style:
+                                FlutterFlowTheme.of(context).bodyText1.override(
+                                      fontFamily: 'Poppins',
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
+                        child: TextFormField(
+                          controller: textController1,
+                          autofocus: true,
+                          obscureText: false,
+                          decoration: InputDecoration(
+                            labelText: 'Enter Phone Number',
+                            hintStyle: FlutterFlowTheme.of(context).bodyText2,
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color(0xFF292929),
+                                width: 1,
+                              ),
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color(0xFF292929),
+                                width: 1,
+                              ),
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            errorBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color(0x00000000),
+                                width: 1,
+                              ),
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            focusedErrorBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color(0x00000000),
+                                width: 1,
+                              ),
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            filled: true,
+                            fillColor: Color(0x215D5C5C),
+                          ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyText1
+                              .override(
+                                fontFamily: 'Poppins',
+                                color:
+                                    FlutterFlowTheme.of(context).secondaryText,
+                                fontWeight: FontWeight.normal,
+                              ),
+                          keyboardType: TextInputType.phone,
+                        ),
+                      ),
+                      Divider(
+                        height: 30,
+                        thickness: 1,
+                        color: Colors.transparent,
+                      ),
+                      Align(
+                        alignment: AlignmentDirectional(-0.8, 0),
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
+                          child: Text(
+                            'One-Time-Pin (OTP)',
+                            style:
+                                FlutterFlowTheme.of(context).bodyText1.override(
+                                      fontFamily: 'Poppins',
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
+                        child: TextFormField(
+                          controller: textController2,
+                          autofocus: true,
+                          obscureText: false,
+                          decoration: InputDecoration(
+                            labelText: 'Enter OTP',
+                            hintStyle: FlutterFlowTheme.of(context).bodyText2,
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color(0xFF292929),
+                                width: 1,
+                              ),
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color(0xFF292929),
+                                width: 1,
+                              ),
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            errorBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color(0x00000000),
+                                width: 1,
+                              ),
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            focusedErrorBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color(0x00000000),
+                                width: 1,
+                              ),
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            filled: true,
+                            fillColor: Color(0x215D5C5C),
+                          ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyText1
+                              .override(
+                                fontFamily: 'Poppins',
+                                color:
+                                    FlutterFlowTheme.of(context).secondaryText,
+                                fontWeight: FontWeight.normal,
+                              ),
+                        ),
+                      ),
+                      Divider(
+                        height: 10,
+                        thickness: 1,
+                        color: Colors.transparent,
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(30, 0, 0, 0),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Align(
+                              alignment: AlignmentDirectional(-0.85, 0),
+                              child: Text(
+                                'Click here to send OTP',
+                                textAlign: TextAlign.center,
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyText1
+                                    .override(
+                                      fontFamily: 'Poppins',
+                                      color: Color(0xFF0054A7),
+                                    ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Divider(
+                        height: 100,
+                        thickness: 1,
+                        color: Colors.transparent,
+                      ),
+                      FFButtonWidget(
+                        onPressed: () async {
+                          context.pushNamed('HomePage');
+                        },
+                        text: 'LOGIN',
+                        options: FFButtonOptions(
+                          width: 150,
+                          height: 40,
+                          color: Color(0xDDD8490D),
+                          textStyle:
+                              FlutterFlowTheme.of(context).subtitle2.override(
+                                    fontFamily: 'Poppins',
+                                    color: Colors.white,
+                                  ),
+                          borderSide: BorderSide(
+                            color: Colors.transparent,
+                            width: 1,
+                          ),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
