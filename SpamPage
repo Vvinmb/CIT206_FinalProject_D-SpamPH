@@ -1,0 +1,284 @@
+import '../flutter_flow/flutter_flow_icon_button.dart';
+import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/flutter_flow_util.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class SpamPageWidget extends StatefulWidget {
+  const SpamPageWidget({Key? key}) : super(key: key);
+
+  @override
+  _SpamPageWidgetState createState() => _SpamPageWidgetState();
+}
+
+class _SpamPageWidgetState extends State<SpamPageWidget> {
+  final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      key: scaffoldKey,
+      backgroundColor: Colors.white,
+      body: GestureDetector(
+        onTap: () => FocusScope.of(context).unfocus(),
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            Image.asset(
+              'assets/images/cropped_pngkit_black-bar-png_205710.png',
+              width: 953.8,
+              height: 43.6,
+              fit: BoxFit.scaleDown,
+            ),
+            Column(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    FlutterFlowIconButton(
+                      borderColor: Colors.transparent,
+                      borderRadius: 30,
+                      borderWidth: 1,
+                      buttonSize: 60,
+                      icon: Icon(
+                        Icons.chevron_left,
+                        color: FlutterFlowTheme.of(context).primaryText,
+                        size: 30,
+                      ),
+                      onPressed: () async {
+                        context.pop();
+                      },
+                    ),
+                    Text(
+                      'Spam Details',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                            fontFamily: 'Poppins',
+                            fontSize: 22,
+                            fontWeight: FontWeight.w800,
+                          ),
+                    ),
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(5, 0, 15, 0),
+                      child: Image.asset(
+                        'assets/images/PROPORTION_SPAM_Detect_PH.png',
+                        width: 40,
+                        height: 40,
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            Column(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Divider(
+                  thickness: 1,
+                  color: Colors.transparent,
+                ),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(15, 10, 20, 0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Icon(
+                        Icons.account_circle,
+                        color: Colors.black,
+                        size: 75,
+                      ),
+                      Column(
+                        mainAxisSize: MainAxisSize.max,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            '0998 599 4230',
+                            style:
+                                FlutterFlowTheme.of(context).bodyText1.override(
+                                      fontFamily: 'Poppins',
+                                      color: Color(0xDDD8490D),
+                                      fontSize: 22,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                          ),
+                          Divider(
+                            thickness: 1,
+                          ),
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
+                            child: Container(
+                              width: 270,
+                              height: 242.4,
+                              decoration: BoxDecoration(
+                                color: Color(0x11292929),
+                                borderRadius: BorderRadius.circular(15),
+                                border: Border.all(
+                                  color: Color(0x9B292929),
+                                ),
+                              ),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    13, 13, 13, 13),
+                                child: Text(
+                                  'FRITZ AERON R, Entertainment that never seems to cease, It\'s just here. Sign up now just here at @Wt!. Sign up now for 3% DEPOSIT BONUS on GCASH up to 2x a DAY. wfifa.com/7777-FIFA Call us at 09985994230  (SMART),  09176290085 (Globe).',
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(100, 2, 0, 0),
+                      child: Text(
+                        '4;14 AM | TNT',
+                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                              fontFamily: 'Poppins',
+                              fontSize: 12,
+                            ),
+                      ),
+                    ),
+                  ],
+                ),
+                Column(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 170, 0, 0),
+                      child: Container(
+                        width: 500,
+                        height: 70,
+                        decoration: BoxDecoration(
+                          color: Color(0xDDFE6E32),
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(0),
+                            bottomRight: Radius.circular(0),
+                            topLeft: Radius.circular(25),
+                            topRight: Radius.circular(25),
+                          ),
+                        ),
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(7, 15, 0, 0),
+                          child: Text(
+                            'OPTIONS',
+                            textAlign: TextAlign.center,
+                            style:
+                                FlutterFlowTheme.of(context).bodyText1.override(
+                                      fontFamily: 'Poppins',
+                                      color: Colors.black,
+                                      fontSize: 30,
+                                    ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            Container(
+              width: 500,
+              height: 190,
+              decoration: BoxDecoration(
+                color: FlutterFlowTheme.of(context).primaryBtnText,
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(0),
+                  bottomRight: Radius.circular(1),
+                  topLeft: Radius.circular(0),
+                  topRight: Radius.circular(0),
+                ),
+                border: Border.all(
+                  color: Colors.transparent,
+                  width: 5,
+                ),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  InkWell(
+                    onTap: () async {
+                      context.pushNamed('BlockMessage');
+                    },
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 15, 0, 10),
+                          child: Text(
+                            'Block Spam',
+                            textAlign: TextAlign.center,
+                            style:
+                                FlutterFlowTheme.of(context).bodyText1.override(
+                                      fontFamily: 'Poppins',
+                                      fontSize: 23,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 350,
+                    child: Divider(
+                      thickness: 1,
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () async {
+                      context.pushNamed('BlockNumber');
+                    },
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 15, 0, 10),
+                          child: Text(
+                            'Block Number',
+                            textAlign: TextAlign.center,
+                            style:
+                                FlutterFlowTheme.of(context).bodyText1.override(
+                                      fontFamily: 'Poppins',
+                                      fontSize: 23,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 350,
+                    child: Divider(
+                      thickness: 1,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
