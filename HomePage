@@ -1,0 +1,570 @@
+import '../flutter_flow/flutter_flow_icon_button.dart';
+import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/flutter_flow_util.dart';
+import '../flutter_flow/flutter_flow_widgets.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class HomePageWidget extends StatefulWidget {
+  const HomePageWidget({Key? key}) : super(key: key);
+
+  @override
+  _HomePageWidgetState createState() => _HomePageWidgetState();
+}
+
+class _HomePageWidgetState extends State<HomePageWidget> {
+  final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      key: scaffoldKey,
+      backgroundColor: Colors.white,
+      body: GestureDetector(
+        onTap: () => FocusScope.of(context).unfocus(),
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            Image.asset(
+              'assets/images/cropped_pngkit_black-bar-png_205710.png',
+              width: 953.8,
+              height: 43.6,
+              fit: BoxFit.scaleDown,
+            ),
+            Column(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 25, 0),
+                      child: FlutterFlowIconButton(
+                        borderColor: Colors.transparent,
+                        borderRadius: 30,
+                        borderWidth: 1,
+                        buttonSize: 60,
+                        icon: Icon(
+                          Icons.menu,
+                          color: FlutterFlowTheme.of(context).primaryText,
+                          size: 30,
+                        ),
+                        onPressed: () async {
+                          context.pushNamed(
+                            'SettingPage',
+                            extra: <String, dynamic>{
+                              kTransitionInfoKey: TransitionInfo(
+                                hasTransition: true,
+                                transitionType: PageTransitionType.leftToRight,
+                                duration: Duration(milliseconds: 300),
+                              ),
+                            },
+                          );
+                        },
+                      ),
+                    ),
+                    Text(
+                      'SMS Spam History',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                            fontFamily: 'Poppins',
+                            fontSize: 22,
+                            fontWeight: FontWeight.w800,
+                          ),
+                    ),
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(25, 0, 10, 0),
+                      child: Image.asset(
+                        'assets/images/PROPORTION_SPAM_Detect_PH.png',
+                        width: 40,
+                        height: 40,
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(5, 0, 5, 0),
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(15, 0, 15, 0),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
+                          child: InkWell(
+                            onTap: () async {
+                              context.pushNamed(
+                                'SpamPage',
+                                extra: <String, dynamic>{
+                                  kTransitionInfoKey: TransitionInfo(
+                                    hasTransition: true,
+                                    transitionType:
+                                        PageTransitionType.rightToLeft,
+                                    duration: Duration(milliseconds: 300),
+                                  ),
+                                },
+                              );
+                            },
+                            child: SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0, 0, 7, 0),
+                                    child: Icon(
+                                      Icons.account_circle,
+                                      color: Colors.black,
+                                      size: 50,
+                                    ),
+                                  ),
+                                  Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        '0998 599 4230',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily: 'Poppins',
+                                              color: Color(0xFFD8490D),
+                                              fontSize: 15,
+                                            ),
+                                      ),
+                                      Text(
+                                        'FRITZ AERON R, Entertainment A has offered...',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily: 'Poppins',
+                                              fontSize: 13,
+                                              fontWeight: FontWeight.normal,
+                                            ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                        Divider(
+                          thickness: 1,
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 7, 0),
+                                  child: Icon(
+                                    Icons.account_circle,
+                                    color: Colors.black,
+                                    size: 50,
+                                  ),
+                                ),
+                                Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      '0985 264 8455',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Color(0xFFD8490D),
+                                            fontSize: 15,
+                                          ),
+                                    ),
+                                    Text(
+                                      'FRITZ AERON R., The best deals for you at WP...',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Divider(
+                          thickness: 1,
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 7, 0),
+                                  child: Icon(
+                                    Icons.account_circle,
+                                    color: Colors.black,
+                                    size: 50,
+                                  ),
+                                ),
+                                Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      '0917 224 9875',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Color(0xFFD8490D),
+                                            fontSize: 15,
+                                          ),
+                                    ),
+                                    Text(
+                                      'Dear VIP FRITZ AERON R., Please! Get your FRE...',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Divider(
+                          thickness: 1,
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 7, 0),
+                                  child: Icon(
+                                    Icons.account_circle,
+                                    color: Colors.black,
+                                    size: 50,
+                                  ),
+                                ),
+                                Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      '0999 654 1247',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Color(0xFFD8490D),
+                                            fontSize: 15,
+                                          ),
+                                    ),
+                                    Text(
+                                      'FRITZ AERON R. Overflowing Cash prizes whe...',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Divider(
+                          thickness: 1,
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 7, 0),
+                                  child: Icon(
+                                    Icons.account_circle,
+                                    color: Colors.black,
+                                    size: 50,
+                                  ),
+                                ),
+                                Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      '0951 894 5824',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Color(0xFFD8490D),
+                                            fontSize: 15,
+                                          ),
+                                    ),
+                                    Text(
+                                      'FRITZ AERON R. Try your luck and win up to PH...',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Divider(
+                          thickness: 1,
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 7, 0),
+                                  child: Icon(
+                                    Icons.account_circle,
+                                    color: Colors.black,
+                                    size: 50,
+                                  ),
+                                ),
+                                Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      '0987 444 7518',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Color(0xFFD8490D),
+                                            fontSize: 15,
+                                          ),
+                                    ),
+                                    Text(
+                                      'FRITZ AERON R.!  We have an iPhone14PROMA...',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Divider(
+                          thickness: 1,
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                SingleChildScrollView(
+                                  scrollDirection: Axis.horizontal,
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 7, 0),
+                                        child: Icon(
+                                          Icons.account_circle,
+                                          color: Colors.black,
+                                          size: 50,
+                                        ),
+                                      ),
+                                      Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            '0943  471 9642',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: Color(0xFFD8490D),
+                                                  fontSize: 15,
+                                                ),
+                                          ),
+                                          Text(
+                                            'Hi FRITZ AERON R.,  Experience the highest-wi...',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  fontSize: 13,
+                                                  fontWeight: FontWeight.normal,
+                                                ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Divider(
+                          thickness: 1,
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 7, 0),
+                                  child: Icon(
+                                    Icons.account_circle,
+                                    color: Colors.black,
+                                    size: 50,
+                                  ),
+                                ),
+                                Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      '0987 379 1874',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Color(0xFFD8490D),
+                                            fontSize: 15,
+                                          ),
+                                    ),
+                                    Text(
+                                      'FRITZ AERON R.! Cash prizes are waiting! Don...',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Divider(
+                          thickness: 1,
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Divider(
+              thickness: 1,
+              color: Colors.transparent,
+            ),
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0, 60, 0, 0),
+              child: FFButtonWidget(
+                onPressed: () async {
+                  context.pushNamed('ReportPage');
+                },
+                text: 'Report Spams',
+                icon: Icon(
+                  Icons.report_outlined,
+                  size: 15,
+                ),
+                options: FFButtonOptions(
+                  width: 300,
+                  height: 50,
+                  color: Color(0xDDD8490D),
+                  textStyle: FlutterFlowTheme.of(context).subtitle2.override(
+                        fontFamily: 'Poppins',
+                        color: Colors.white,
+                      ),
+                  borderSide: BorderSide(
+                    color: Colors.transparent,
+                    width: 1,
+                  ),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
